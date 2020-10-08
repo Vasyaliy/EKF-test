@@ -64,7 +64,6 @@ export default Vue.extend({
   justify-content: space-between;
   align-items: center;
   width: 30%;
-  // height: 30%;
-  // background-color: rgba($color: #000000, $alpha: 0.1)
+
 }
 </style>

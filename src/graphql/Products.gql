@@ -1,5 +1,5 @@
-query ($limit: Int!){
-	products (limit: $limit){
+query ($limit: Int!, $offset: Int!){
+	products (limit: $limit, offset: $offset){
     name,
     vendor_code,
     series,
