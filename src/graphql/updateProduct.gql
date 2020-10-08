@@ -1,0 +1,14 @@
+mutation ($id: String, $name: String, $vendor_code: String) {
+	update_products  (
+    	_set : {
+      	name: $name,
+        vendor_code: $vendor_code
+      },
+    where: {
+      id: {
+      	_eq: $id
+      }
+    })  {
+		affected_rows,
+  }
+}

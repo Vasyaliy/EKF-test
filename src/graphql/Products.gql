@@ -1,0 +1,11 @@
+query ($limit: Int!){
+	products (limit: $limit){
+    name,
+    vendor_code,
+    series,
+    id,
+    prices {
+      price
+    }
+  }
+}
